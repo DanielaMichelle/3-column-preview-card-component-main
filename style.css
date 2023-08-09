@@ -1,0 +1,143 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --lexend-deca-font: 'Lexend Deca', sans-serif;
+    --big-shoulders-display-font: 'Big Shoulders Display', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%; 
+}
+
+main {
+    background-color: var(--very-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.column-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 65%;
+}
+
+.column-card__column {
+    padding: 4rem;
+    padding-right: 6.5rem;
+    position: relative;
+}
+
+.column-card__column h1 {
+    font-family: var(--big-shoulders-display-font);
+    color: var(--very-light-gray);
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.column-card__column p {
+    color: var(--transparent-white);
+    font-family: var(--lexend-deca-font);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 12rem;
+}
+
+.column-card__column button {
+    background-color: var(--very-light-gray);
+    border: none;
+    padding: 1.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    border-radius: 50px;
+    font-family: var(--lexend-deca-font);
+    position: absolute;
+    bottom: 4rem;
+}
+
+.column-card__column button:hover {
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+    cursor: pointer;
+}
+
+.sedans-column {
+    background-color: var(--bright-orange);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.sedans-column button {
+    color: var(--bright-orange);
+}
+
+.suvs-column {
+    background-color: var(--dark-cyan);
+}
+
+.suvs-column button {
+    color: var(--dark-cyan);
+}
+
+.luxury-column {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.luxury-column button {
+    color: var(--very-dark-cyan);
+}
+
+@media (max-width: 1440px) {
+    .column-card {
+        width: 936px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .column-card {
+        width: 80%;
+    }
+
+    .column-card__column {
+        padding: 3rem;
+        padding-right: 4rem;
+    }
+
+    .column-card__column h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        height: auto;
+    }
+
+    .column-card {
+        display: block;
+        width: 90%;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+} 
+
+@media (max-width: 425px) {
+    .column-card__column p {
+        margin-bottom: 8rem;
+    }
+}
