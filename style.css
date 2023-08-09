@@ -140,4 +140,13 @@ main {
     .column-card__column p {
         margin-bottom: 8rem;
     }
+
+    .sedans-column {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .luxury-column {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+    
 }

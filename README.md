@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
-- Live Site URL: 
+- Solution URL: https://github.com/DanielaMichelle/3-column-preview-card-component-main
+- Live Site URL: https://danielamichelle.github.io/3-column-preview-card-component-main/
 
 ### Built with
 
